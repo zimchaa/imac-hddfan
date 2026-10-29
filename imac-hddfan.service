@@ -1,0 +1,10 @@
+[Unit]
+Description=iMac HDD fan control (missing HDD sensor workaround)
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/sbin/imac-hddfan
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
